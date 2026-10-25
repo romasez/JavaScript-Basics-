@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <section id="profile-section">
+      <h2>My Profile</h2>
+      <div id="profile-card" class="card">
+        <p><strong>Name:</strong> <span id="profile-name"></span></p>
+        <p><strong>Birth year:</strong> <span id="profile-birth-year"></span></p>
+        <p><strong>Developer:</strong> <span id="profile-developer"></span></p>
+        <p><strong>Age:</strong> <span id="profile-age"></span></p>
+        <p><strong>Months old (approx.):</strong> <span id="profile-months"></span></p>
+        <p><strong>Hobbies count:</strong> <span id="profile-hobbies-count"></span></p>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <h2>Create / Update Profile</h2>
+      <form id="profile-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your name">
+
+        <label for="birth-year">Birth Year</label>
+        <input type="number" id="birth-year" placeholder="e.g. 2005">
+
+        <button type="submit" id="update-btn">Create / Update Profile</button>
+        <p id="form-message" class="message"></p>
+      </form>
+    </section>
+
+    <section id="list-section">
+      <h2>My Hobbies</h2>
+      <ul id="hobby-list"></ul>
+
+      <div class="list-controls">
+        <input type="text" id="new-item" placeholder="New hobby or task">
+        <button type="button" id="add-btn">Add Item</button>
+        <button type="button" id="remove-btn" class="danger">Remove Item</button>
+      </div>
+      <p id="list-message" class="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
